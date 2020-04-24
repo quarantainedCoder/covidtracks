@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Go-Corona-Go</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <center>
+    <div style="background-color:FFF5EE;padding:10px">
+      <div class="containered">
+        <div class="row">
+          <div class="col-sm-1" style="text-align:left">
+            <img src="circlecropped.png" alt="Developer Pic😎" width='100px' height="100px">
+          </div>
+          <div class="col-sm-10">
+            <h1 class="header">Covid19 Tracker - <em>Country Wise</em></h1>
+          </div>
+          <div class="col-sm-1">
+            <img src="Earthgiphy.gif" alt="earthpic" width='100px' height="100px">
+          </div>
+        </div>
+      </div>
+    </div>
+  </center>
+  <div class="wrap">
+    <div class="floatleft">
+      <input type="text" id="searchbox" class="form-control" placeholder="Search by Country name" aria-label="Recipient's username" aria-describedby="button-addon2" required>
+    </div>
+    <div class="floatright">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-8">
+            <h1 id="headerCountryName"></h1>
+          </div>
+          <div class="col-sm-4">
+            <input type="date" id="datebox" class="form-control" aria-label="Recipient" aria-describedby="button-addon2" onchange="fetchdata()" required>
+          </div>
+        </div>
+      </div>
+      <hr>
+      <div class="container">
+        <table width=100%; class="tableclass">
+          <tr class="trshadow">
+            <td>
+              <div class="numbersRed">
+                <h3>Active Cases</h3>
+                <div>
+            </td>
+            <td>
+              <div class="numbersGrey">
+                <h3>Deceased</h3>
+                <div>
+            </td>
+            <td>
+              <div class="numbersGreen">
+                <h3>Recoveries</h3>
+                <div>
+            </td>
+          </tr>
+          <tr class="trshadow">
+            <td style="background:rgba(255,7,58,.12549);border-radius:5px;height:100px;">
+              <h1 id="confirm"></h1>
+            </td>
+            <td style="background:#979191;;border-radius:5px;height:100px;">
+              <h1 id="dead"></h1>
+            </td>
+            <td style="background:#A4F3CA;border-radius:5px;height:100px;">
+              <h1 id="recovery"></h1>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <div style="clear: both;">
+      <div class="" style="padding-top:120px">
+        <table width=100%;>
+          <tr>
+            <td colspan="3">
+              <center>
+                <h5>"Stay home, Stay Safe."</h5>
+              </center>
+            </td>
+          </tr>
+          <tr>
+            <td style="text-align:center"><img src="NoHandshake.jpg" alt="no handshake Pic😎" width='100px' height="100px"></td>
+            <td style="text-align:center"><img src="wash-hands-drawing-30.jpg" alt="no handshake Pic😎" width='100px' height="100px"></td>
+            <td style="text-align:center"><img src="socialdistance.png" alt="no handshake Pic😎" width='100px' height="100px"></td>
+          </tr>
+        </table>
+      </div>
+
+    </div>
+  </div>
+
+  <script type="text/javascript" src="covidscript.js">
+
+  </script>
+</body>
+
+</html>
